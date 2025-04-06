@@ -1,38 +1,167 @@
-.App {
+
+
+
+/* Intro text with typing effect */
+.intro {
+  font-size: 2rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  width: fit-content; /* Ensures text isn't completely hidden */
+  max-width: 100%; /* Prevents overflow */
+  border-right: 2px solid pink; /* Blinking cursor effect */
   text-align: center;
+  animation: typing 5s steps(50)1s forwards, blinkCursor 0.7s infinite;
+  margin-top: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Typing animation */
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+      width: 0;
   }
   to {
-    transform: rotate(360deg);
+      width: 100%;
   }
 }
+
+/* Blinking cursor animation */
+@keyframes blinkCursor {
+  50% {
+      border-color: transparent;
+  }
+}
+
+.intro span {
+  color: black;
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.icon:active {
+  transform: scale(0.9);
+}
+
+/* Contact button */
+.contact-button {
+  display: block;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: pink;
+  color:black;
+  font-size: 18px;
+  border: none;
+  width: 120px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+}
+
+/* Page background and general styles */
+body {
+  background-color:black;
+  position: relative;
+  color:pink;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+
+}
+
+/* Logo styling */
+.logo {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top:0;
+  left: 0;
+  
+  
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+
+
+.logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Description box */
+.description {
+  margin: 100px auto;
+  width: 50%;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: black;
+  color: lightpink;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+ul {
+  list-style-position: inside; /* يجعل النقاط داخل النص */
+  text-align: left; /* يضمن أن العناصر تبدأ من اليسار */
+  padding-left: 0; /* إزالة التباعد الافتراضي */
+  display: inline-block; 
+  font-size: 30px;/* يتماشى مع تنسيق المنتصف */
+  font-family: cursive;
+}
+
+
+#about {
+  display: flex; 
+  flex-direction: column;  /* ترتيب العناصر عموديًا */
+  justify-content: center; /* توسيط عمودي */
+  align-items: center; /* توسيط أفقي */
+  height: 100vh; /* يجعل القسم يأخذ ارتفاع الصفحة بالكامل */
+  text-align: center; /* جعل النص في المنتصف */
+}
+
+
+p{
+  font-family: cursive;
+  font-size: 30px;
+  
+
+}
+
+
+
