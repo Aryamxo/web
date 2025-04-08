@@ -6,15 +6,14 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLHo8cqowpIpXl-h509NTL_2A7qLPID0o",
-  authDomain: "website-a4387.firebaseapp.com",
-  projectId: "website-a4387",
-  storageBucket: "website-a4387.firebasestorage.app",
-  messagingSenderId: "177339107744",
-  appId: "1:177339107744:web:a30064cf6162c2f2bfbcc5",
-  measurementId: "G-BR1B7V3XLW"
+  apiKey: "AIzaSyB2ogGBJOEsCGHTgbZN1trKSakoQImEvoA",
+  authDomain: "website-b7a55.firebaseapp.com",
+  projectId: "website-b7a55",
+  storageBucket: "website-b7a55.firebasestorage.app",
+  messagingSenderId: "20658954977",
+  appId: "1:20658954977:web:c7fb7daf1f3f39edbb4da0",
+  measurementId: "G-LS0W6CFXGZ"
 };
-
 
  export const app = initializeApp(firebaseConfig);
 
@@ -23,7 +22,7 @@ const firebaseConfig = {
 
 
 
-const firebaseApp = initializeApp(firebaseConfig); // هذا هو التعريف الذي كان مفقوداً
-const db = getFirestore(firebaseApp); // استخدام firebaseApp هنا بعد تعريفه
+const firebaseApp = initializeApp(firebaseConfig); 
+const db = getFirestore(firebaseApp); 
 export { db, collection, addDoc };
 export default firebaseApp;
