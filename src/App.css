@@ -1,15 +1,15 @@
 
 
 
-/* Intro text with typing effect */
+
 .intro {
   font-size: 2rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   overflow: hidden;
   white-space: nowrap;
-  width: fit-content; /* Ensures text isn't completely hidden */
-  max-width: 100%; /* Prevents overflow */
-  border-right: 2px solid pink; /* Blinking cursor effect */
+  width: fit-content; 
+  max-width: 100%; 
+  border-right: 2px solid pink; 
   text-align: center;
   animation: typing 5s steps(50)1s forwards, blinkCursor 0.7s infinite;
   margin-top: 10%;
@@ -25,7 +25,6 @@
   }
 }
 
-/* Blinking cursor animation */
 @keyframes blinkCursor {
   50% {
       border-color: transparent;
@@ -85,12 +84,12 @@
   transform: scale(1.1);
 }
 
-/* Page background and general styles */
-body {
+
+/* body {
   background-color:black;
   position: relative;
   color:pink;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -99,7 +98,7 @@ body {
   align-items: center;
 flex-direction: column;
 
-}
+} */
 
 /* Logo styling */
 .logo {
@@ -124,7 +123,7 @@ flex-direction: column;
 }
 
 /* Description box */
-.description {
+/* .description {
   margin: 100px auto;
   width: 50%;
   font-size: 24px;
@@ -135,33 +134,115 @@ flex-direction: column;
   border-radius: 25px;
   text-align: center;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
+} */
 ul {
-  list-style-position: inside; /* يجعل النقاط داخل النص */
-  text-align: left; /* يضمن أن العناصر تبدأ من اليسار */
-  padding-left: 0; /* إزالة التباعد الافتراضي */
+  list-style-position: inside; 
+  text-align: left; 
+  padding-left: 0; 
   display: inline-block; 
-  font-size: 30px;/* يتماشى مع تنسيق المنتصف */
-  font-family: cursive;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
 #about {
   display: flex; 
-  flex-direction: column;  /* ترتيب العناصر عموديًا */
-  justify-content: center; /* توسيط عمودي */
-  align-items: center; /* توسيط أفقي */
-  height: 100vh; /* يجعل القسم يأخذ ارتفاع الصفحة بالكامل */
-  text-align: center; /* جعل النص في المنتصف */
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center; 
+  
 }
 
 
 p{
-  font-family: cursive;
+  font-family:'Times New Roman', Times, serif;
   font-size: 30px;
   
 
 }
+body {
+  background-color: #f8f9fa; /* Bootstrap's default light background */
+  color: #212529; /* Bootstrap's default text color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.description {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.text-pink {
+  color: #ff69b4 !important;
+}
 
+.navbar .nav-link:hover {
+  color: #ff69b4 !important;
+  text-decoration: underline;
+}
 
+.btn-outline-pink:hover {
+  background-color: #ff69b4 !important;
+  color: white !important;
+  border-color: #ff69b4 !important;
+}
+
+.typing-effect {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid pink;
+  width: fit-content;
+  margin: 0 auto;
+  animation: typing 3s steps(30, end), blinkCursor 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    border-color: pink;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+.typing-effect {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid pink;
+  width: fit-content;
+  margin: 0 auto;
+  animation: typing 3s steps(30, end), blinkCursor 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    border-color: pink;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
 

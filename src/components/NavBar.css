@@ -1,15 +1,15 @@
 .navbar {
-  position: fixed;  /* يبقى في الأعلى حتى عند التمرير */
-  top: 0;  /* يثبته في أعلى الصفحة */
-  left: 50%;  /* يضعه في منتصف الصفحة */
-  transform: translateX(-50%);  /* يضبطه ليكون بالضبط في المنتصف */
-  background-color: pink; /* لون خلفية شفاف */
-  padding: 15px 20px; /* تباعد داخلي */
+  position: fixed;  
+  top: 0;  
+  left: 50%;  
+  transform: translateX(-50%);  
+  background-color: pink; 
+  padding: 15px 20px; 
   display: flex;
   justify-content: center;
   gap: 20px;
-  border-radius: 20px; /* زوايا ناعمة */
-  z-index: 1000; /* يجعله فوق كل العناصر */
+  border-radius: 20px; 
+  z-index: 1000; 
 }
 
 .navbar a {
@@ -23,5 +23,5 @@
 }
 
 .navbar a:hover {
-  color: lightpink; /* تغيير اللون عند التمرير */
+  color: lightpink;
 }

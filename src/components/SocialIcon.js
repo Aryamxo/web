@@ -1,24 +1,23 @@
 import React from "react";
-import social1 from "../assets/img/x.png";     
-import social2 from "../assets/img/git.png";  
-import social3 from "../assets/img/in.png";    
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// import './SocialIcon.css'; // Reuse your hover styles!
 
 function SocialIcons() {
   return (
     <div className="social-icons">
-      {/* رابط حساب Twitter (X) */}
-      <a href="https://x.com/diaryasrere" target="_blank" rel="noopener noreferrer">
-        <img src={social1} alt="X" className="icon" />
+      {/* X (Twitter) */}
+      <a href="https://x.com/diaryasrere" target="_blank" rel="noopener noreferrer" className="icon">
+        <i className="bi bi-twitter-x text-dark fs-1 "></i>
       </a>
-      
-      {/* رابط حساب GitHub */}
-      <a href="https://github.com/Aryamxo" target="_blank" rel="noopener noreferrer">
-        <img src={social2} alt="GitHub" className="icon" />
+
+      {/* GitHub */}
+      <a href="https://github.com/Aryamxo" target="_blank" rel="noopener noreferrer" className="icon">
+        <i className="bi bi-github text-dark fs-1"></i>
       </a>
-      
-      {/* رابط حساب LinkedIn */}
-      <a href="https://linkedin.com/in/aryam-alsulami-67336a320" target="_blank" rel="noopener noreferrer">
-        <img src={social3} alt="LinkedIn" className="icon" />
+
+      {/* LinkedIn */}
+      <a href="https://linkedin.com/in/aryam-alsulami-67336a320" target="_blank" rel="noopener noreferrer" className="icon">
+        <i className="bi bi-linkedin text-dark fs-1"></i>
       </a>
     </div>
   );
